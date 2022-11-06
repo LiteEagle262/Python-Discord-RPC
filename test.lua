@@ -9,7 +9,7 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 -- end
 while not player do
 end
-wait(5)
+wait(30)
 queueonteleport = syn.queue_on_teleport or queue_on_teleport
 player.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
