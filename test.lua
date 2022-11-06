@@ -9,7 +9,7 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 --     print("gay loading screen")
 -- end
 while not player do
-    print("gay loading screen")
+    
 end
 queueonteleport = syn.queue_on_teleport or queue_on_teleport
 player.OnTeleport:Connect(function(State)
