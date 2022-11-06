@@ -52,6 +52,7 @@ local function serverHop()
     end
 end
 
+wait(10)
 if game:GetService("Workspace").WORKSPACE_Entities.Animals:FindFirstChild("Wendigo") then
     loadstring(game:HttpGet"https://liteeagle.me/scripts/wildwest.lua")()
     Notification:Notify(
