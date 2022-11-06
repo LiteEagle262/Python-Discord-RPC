@@ -5,6 +5,8 @@ local player = players.LocalPlayer
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
+wait(10)
+
 queueonteleport = syn.queue_on_teleport or queue_on_teleport
 player.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
@@ -52,7 +54,6 @@ local function serverHop()
     end
 end
 
-wait(10)
 if game:GetService("Workspace").WORKSPACE_Entities.Animals:FindFirstChild("Wendigo") then
     loadstring(game:HttpGet"https://liteeagle.me/scripts/wildwest.lua")()
     Notification:Notify(
