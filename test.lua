@@ -5,7 +5,10 @@ local player = players.LocalPlayer
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
-while playerGui:FindFirstChild("LoadingGate") do
+-- while playerGui:FindFirstChild("LoadingGate") do
+--     print("gay loading screen")
+-- end
+while not player do
     print("gay loading screen")
 end
 queueonteleport = syn.queue_on_teleport or queue_on_teleport
